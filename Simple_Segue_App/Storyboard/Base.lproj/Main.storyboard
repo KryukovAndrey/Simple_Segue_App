@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login And Pass View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginAndPassViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PMN-i4-x5p">
+                                <rect key="frame" x="34.5" y="248.5" width="251" height="71"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bo5-Sd-xH6">
+                                        <rect key="frame" x="99" y="0.0" width="53" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Log in"/>
+                                        <connections>
+                                            <action selector="logInAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QGf-kC-ydj"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="wV2-LB-7qR">
+                                        <rect key="frame" x="0.0" y="44" width="251" height="27"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EuD-6t-2M2">
+                                                <rect key="frame" x="0.0" y="0.0" width="110" height="27"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <state key="normal" title="Forgot User Name?"/>
+                                                <connections>
+                                                    <action selector="forgotUserNameAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BC3-aH-09a"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0zQ-Sv-0wG">
+                                                <rect key="frame" x="150" y="0.0" width="101" height="27"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <state key="normal" title="Forgot Password?"/>
+                                                <connections>
+                                                    <action selector="forgotPasswordAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FCN-ap-tr4"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hBb-iw-yVZ">
+                                <rect key="frame" x="58" y="169" width="204" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eNa-z5-Ls3">
+                                <rect key="frame" x="58" y="111" width="204" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="PMN-i4-x5p" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="2nT-Zy-f1Y"/>
+                            <constraint firstItem="eNa-z5-Ls3" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6375" id="GyE-TW-jke"/>
+                            <constraint firstItem="PMN-i4-x5p" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="QmL-ht-EiH"/>
+                            <constraint firstItem="hBb-iw-yVZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Zdj-7g-YmA"/>
+                            <constraint firstItem="eNa-z5-Ls3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="111" id="bYF-Cl-2EW"/>
+                            <constraint firstItem="eNa-z5-Ls3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="h2R-IF-Xvh"/>
+                            <constraint firstItem="hBb-iw-yVZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="169" id="rmK-zS-HI5"/>
+                            <constraint firstItem="hBb-iw-yVZ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6375" id="vcn-wQ-DTg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="loginTextField" destination="eNa-z5-Ls3" id="wsC-uQ-dTR"/>
+                        <outlet property="passwTextField" destination="hBb-iw-yVZ" id="Zx5-3o-URL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.75" y="109.85915492957747"/>
+        </scene>
+    </scenes>
+</document>
